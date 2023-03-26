@@ -35,7 +35,7 @@ Kiểm tra phiên bản:
     git clone https://github.com/celestiaorg/celestia-node.git
 
     cd celestia-node/ 
-    git checkout tags/v0.7.1
+    git checkout tags/v0.7.2
     make build 
 
     make install 
