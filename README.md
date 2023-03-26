@@ -46,9 +46,9 @@ Kiểm tra phiên bản:
 
     celestia light init --p2p.network blockspacerace 
     
-Chạy node bằng port 9090, thay ip-address = địa chỉ VPS
+Chạy node bằng port 26659, thay ip-addr = địa chỉ VPS
 
-    celestia light start --p2p.network blockspacerace --core.ip --core.grpc.port --gateway --gateway.addr <ip-address> --gateway.port 9090
+    celestia light start --p2p.network blockspacerace --core.ip <ip-address> --gateway --gateway.addr <ip-address> --gateway.port 26659
     
 6/ Tạo ví mới:
 
@@ -68,7 +68,7 @@ Muốn kiểm tra các ví đang chạy trên node của bạn:
 
 Chạy node bằng Key: thay ip address = địa chỉ IP VPS
 
-    celestia light start --core.ip --core.grpc.port --keyring.accname wallet --gateway --gateway.addr <ip-address> --gateway.port 9090 --p2p.network blockspacerace
+    celestia light start --core.ip <ip-address> --keyring.accname wallet --gateway --gateway.addr <ip-address> --gateway.port 26659 --p2p.network blockspacerace
     
 Chạy bằng systemD; cần khởi tạo service như dưới đây:
 
