@@ -79,7 +79,7 @@ Chạy bằng systemD; cần khởi tạo service như dưới đây:
 
     [Service]
     User=$USER
-    ExecStart=$(which celestia-lightd) start --core.ip --core.grpc.port
+    ExecStart=$(which celestia-lightd) start --core.ip <ip-address>
     Restart=on-failure
     RestartSec=3
     LimitNOFILE=4096
