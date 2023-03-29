@@ -35,7 +35,7 @@ Kiểm tra phiên bản:
     git clone https://github.com/celestiaorg/celestia-node.git
 
     cd celestia-node/ 
-    git checkout tags/v0.8.0-rc1
+    git checkout tags/v0.8.0
     make build 
 
     make install 
@@ -45,14 +45,14 @@ Kiểm tra phiên bản:
 5/ Cài đặt mạng:
 
     celestia light init --p2p.network blockspacerace 
+ 
+Chạy node bằng RPC, dùng port 26657. Đổi địa chỉ ip-addr = địa chỉ VPS
+
+    celestia light start --core.ip https://rpc-blockspacerace.pops.one/ --gateway --gateway.addr <ip-address> --gateway.port 26657 --p2p.network blockspacerace
     
 Chạy node bằng port 26659, thay ip-addr = địa chỉ VPS
 
     celestia light start --p2p.network blockspacerace --core.ip <ip-address> --gateway --gateway.addr <ip-address> --gateway.port 26659
-    
-Chạy node bằng RPC, dùng port 26657. Đổi địa chỉ ip-addr = địa chỉ VPS
-
-    celestia light start --core.ip https://rpc-blockspacerace.pops.one/ --gateway --gateway.addr <ip-address> --gateway.port 26657 --p2p.network blockspacerace
     
 6/ Tạo ví mới:
 
