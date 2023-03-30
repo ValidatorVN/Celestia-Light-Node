@@ -102,7 +102,10 @@ Khởi chạy hệ thống:
     sudo systemctl start celestia-lightd
     systemctl status celestia-lightd
 
-Lấy node ID, nhập lệnh này:
+Lấy node ID, nhập 2 lệnh này:
+
+    NODE_TYPE=light
+    AUTH_TOKEN=$(celestia $NODE_TYPE auth admin --p2p.network blockspacerace)
 
     curl -X POST \
      -H "Authorization: Bearer $AUTH_TOKEN" \
