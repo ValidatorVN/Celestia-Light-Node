@@ -113,6 +113,12 @@ Lấy node ID, nhập 2 lệnh này:
      -d '{"jsonrpc":"2.0","id":0,"method":"p2p.Info","params":[]}' \
      http://localhost:26658
 
+Kiêm tra Node có hoạt động ổn định trên scan:
+
+    https://tiascan.com/light-nodes
+    
+Dán Node ID của bạn vào, trên 90% là .
+
 Chúc các bạn thành công!
 
 Cộng đồng chạy Node & Validator VietNam, nơi thảo luận và chia sẻ kinh nghiệm về chạy node/validator.
