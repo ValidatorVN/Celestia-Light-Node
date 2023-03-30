@@ -102,6 +102,14 @@ Khởi chạy hệ thống:
     sudo systemctl start celestia-lightd
     sudo journalctl -u celestia-lightd.service -f
 
+Lấy node ID, nhập lệnh này:
+
+    curl -X POST \
+     -H "Authorization: Bearer $AUTH_TOKEN" \
+     -H 'Content-Type: application/json' \
+     -d '{"jsonrpc":"2.0","id":0,"method":"p2p.Info","params":[]}' \
+     http://localhost:26658
+
 Chúc các bạn thành công!
 
 Cộng đồng chạy Node & Validator VietNam, nơi thảo luận và chia sẻ kinh nghiệm về chạy node/validator.
