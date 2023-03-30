@@ -100,7 +100,7 @@ Khởi chạy hệ thống:
 
     sudo systemctl enable celestia-lightd
     sudo systemctl start celestia-lightd
-    sudo journalctl -u celestia-lightd.service -f
+    systemctl status celestia-lightd
 
 Lấy node ID, nhập lệnh này:
 
